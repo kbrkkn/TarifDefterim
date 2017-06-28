@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TarifDefterim</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mutfak_aski">
+        MUTFAĞIMA HOŞGELDİN SEVGİLİ DOST.
+    YEMEK YEMENİN VE YAPMANIN BENİM İÇİN NE BÜYÜK BİR SEVDA OLDUĞUNU SANA ANLATAMAM.O YÜZDENDİR BUNCA SAÇMALAMAM:)
+
+    </string>
+
+</resources>
