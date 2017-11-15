@@ -20,7 +20,7 @@ public class CustomAdapter extends BaseAdapter {
     }
     @Override
     public Object getItem(int position) {
-        return tarifList.get(position);
+        return tarifList.get(getCount()-position-1);
     }
     @Override
     public long getItemId(int position) {
@@ -28,7 +28,7 @@ public class CustomAdapter extends BaseAdapter {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        TarifModel tarif=tarifList.get(position);
+        TarifModel tarif= (TarifModel) getItem(position);
         View satir=layoutInflater.inflate(R.layout.custom_satir,null);
         TextView isim= (TextView) satir.findViewById(R.id.textViewIsim);
         TextView malzemeler= (TextView) satir.findViewById(R.id.textViewMalzemeler);

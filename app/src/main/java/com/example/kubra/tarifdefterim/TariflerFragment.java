@@ -36,6 +36,7 @@ public class TariflerFragment extends Fragment {
                     String malzemeler=ds.child("malzemeler").getValue().toString();
                     tarifList.add(new TarifModel(isim,detay,malzemeler));
                 }
+
                 CustomAdapter adapter=new CustomAdapter(getActivity(),tarifList);
                 listView.setAdapter(adapter);
                 dbRef.removeEventListener(this);}
