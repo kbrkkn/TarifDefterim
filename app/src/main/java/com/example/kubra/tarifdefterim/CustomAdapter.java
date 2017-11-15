@@ -28,14 +28,13 @@ public class CustomAdapter extends BaseAdapter {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        TarifModel tarif= (TarifModel) getItem(position);
-        View satir=layoutInflater.inflate(R.layout.custom_satir,null);
-        TextView isim= (TextView) satir.findViewById(R.id.textViewIsim);
-        TextView malzemeler= (TextView) satir.findViewById(R.id.textViewMalzemeler);
-        TextView detay= (TextView) satir.findViewById(R.id.textViewDetay);
+        TarifModel tarif = (TarifModel) getItem(position);
+        View satir = layoutInflater.inflate(R.layout.custom_satir, null);
+        TextView isim = (TextView) satir.findViewById(R.id.textViewIsim);
+        TextView malzemeler = (TextView) satir.findViewById(R.id.textViewMalzemeler);
+        TextView detay = (TextView) satir.findViewById(R.id.textViewDetay);
         isim.setText(tarif.getIsim());
         malzemeler.setText(tarif.getMalzemeler());
         detay.setText(tarif.getDetay());
         return satir;
-    }
-}
+    }}
